@@ -5,7 +5,7 @@ local window_width, window_height, _ = love.window.getMode()
 local imgx, imgy = 0, 0
 
 function love.draw()
-	love.graphics.draw(IMAGE, imgx, imgy)
+	love.graphics.draw(IMAGE, imgx, imgy, 0, 0.5, 3)
 	love.graphics.print("Olá Mundo!", 350, 250)
 	love.graphics.print(window_width, 350, 350)
 end
