@@ -44,3 +44,8 @@ local lista_com_alguns_itens = { "abc (sou o primeiro item)", nil, "ghi" }
 print(lista_com_alguns_itens)
 print(lista_com_alguns_itens[1])
 print("tamanho da lista: " .. #lista_com_alguns_itens)
+
+print(getmetatable(pessoa_gustavo))
+print(getmetatable(lista_com_alguns_itens))
+print(getmetatable(pessoa_gustavo.teste))
+print(getmetatable(1))
