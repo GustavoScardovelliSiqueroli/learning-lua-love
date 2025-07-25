@@ -45,7 +45,20 @@ print(lista_com_alguns_itens)
 print(lista_com_alguns_itens[1])
 print("tamanho da lista: " .. #lista_com_alguns_itens)
 
+-- debug.debug()
+
 print(getmetatable(pessoa_gustavo))
 print(getmetatable(lista_com_alguns_itens))
 print(getmetatable(pessoa_gustavo.teste))
 print(getmetatable(1))
+
+print()
+print(tostring(_G))
+local g = nil
+repeat
+	g = next(_G, g)
+	print(g)
+until g == nil
+
+print(unpack(_G))
+print(os.clock())
